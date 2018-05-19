@@ -14,6 +14,7 @@ import java.io.InputStreamReader;
  * @author SISCU
  */
 public class Main {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Tablero t = new Tablero();
@@ -62,4 +63,5 @@ public class Main {
         
         
     }
+
 }
