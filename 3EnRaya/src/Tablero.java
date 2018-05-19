@@ -44,4 +44,13 @@ public class Tablero {
         System.out.println("      *       *      " + "        " + "      *       *      ");
     }
     	
+    public void aumentarTurno(){
+        turno = turno + 1;
+        
+        if(J1Juega == true){
+            J1Juega = false;
+        }else{
+            J1Juega = true;
+        }
+    }
 }
