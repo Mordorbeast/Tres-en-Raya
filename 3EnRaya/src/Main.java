@@ -34,7 +34,15 @@ public class Main {
                 System.out.println("Juega el jugador 2 (O)");
             }
 
-            
+            do{
+                System.out.println("Introduce la posicion en la que quieres colocar tu ficha (1-9)");
+                cadena = br.readLine();
+                posicion = Integer.parseInt(cadena);
+                
+                t.hayFicha(posicion);
+                
+            }while(posicion <= 0 || posicion > 9 || t.hayFicha == true);
+
             
         }while(salir == false);
         
