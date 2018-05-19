@@ -38,7 +38,9 @@ public class Main {
             
         }while(salir == false);
         
+        t.mostrarTablero();
         
+        t.quienGana(t.tresEnRaya());
         
         
         
