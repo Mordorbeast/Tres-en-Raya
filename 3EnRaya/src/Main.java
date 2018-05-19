@@ -43,10 +43,13 @@ public class Main {
                 
             }while(posicion <= 0 || posicion > 9 || t.hayFicha == true);
             
-	    t.colocarFicha(posicion,ficha);
+	    	t.colocarFicha(posicion,ficha);
             
-            t.aumentarTurno();
+            	t.aumentarTurno();
             
+		if(t.tableroLleno() == true || !" ".equals(t.tresEnRaya())){
+                salir = true;
+            }
             
             
         }while(salir == false);
