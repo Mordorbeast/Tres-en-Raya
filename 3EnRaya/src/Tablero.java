@@ -53,4 +53,117 @@ public class Tablero {
             J1Juega = true;
         }
     }
+
+    public void hayFicha(int posicion){
+        switch(posicion){
+            case 1:
+                if(pos1.equals(" ")){
+                    hayFicha = false;
+                }else{
+                    hayFicha = true;
+                    System.out.println("Ya hay una ficha en esta posicion.");
+                }
+            break;
+            case 2:
+                if(pos2.equals(" ")){
+                    hayFicha = false;
+                }else{
+                    hayFicha = true;
+                    System.out.println("Ya hay una ficha en esta posicion.");
+                }
+            break;
+            case 3:
+                if(pos3.equals(" ")){
+                    hayFicha = false;
+                }else{
+                    hayFicha = true;
+                    System.out.println("Ya hay una ficha en esta posicion.");
+                }
+            break;
+            case 4:
+                if(pos4.equals(" ")){
+                    hayFicha = false;
+                }else{
+                    hayFicha = true;
+                    System.out.println("Ya hay una ficha en esta posicion.");
+                }
+            break;
+            case 5:
+                if(pos5.equals(" ")){
+                    hayFicha = false;
+                }else{
+                    hayFicha = true;
+                    System.out.println("Ya hay una ficha en esta posicion.");
+                }
+            break;
+            case 6:
+                if(pos6.equals(" ")){
+                    hayFicha = false;
+                }else{
+                    hayFicha = true;
+                    System.out.println("Ya hay una ficha en esta posicion.");
+                }
+            break;
+            case 7:
+                if(pos7.equals(" ")){
+                    hayFicha = false;
+                }else{
+                    hayFicha = true;
+                    System.out.println("Ya hay una ficha en esta posicion.");
+                }
+            break;
+            case 8:
+                if(pos8.equals(" ")){
+                    hayFicha = false;
+                }else{
+                    hayFicha = true;
+                    System.out.println("Ya hay una ficha en esta posicion.");
+                }
+            break;
+            case 9:
+                if(pos9.equals(" ")){
+                    hayFicha = false;
+                }else{
+                    hayFicha = true;
+                    System.out.println("Ya hay una ficha en esta posicion.");
+                }
+            break;
+            default:
+                System.out.println("Error. Introduce una opcion valida.");
+            break;
+        }
+    }
+        
+    public void colocarFicha(int posicion, String ficha){
+        switch(posicion){
+            case 1:
+                pos1 = ficha;
+            break;
+            case 2:
+                pos2 = ficha;
+            break;
+            case 3:
+                pos3 = ficha;
+            break;
+            case 4:
+                pos4 = ficha;
+            break;
+            case 5:
+                pos5 = ficha;
+            break;
+            case 6:
+                pos6 = ficha;
+            break;
+            case 7:
+                pos7 = ficha;
+            break;
+            case 8:
+                pos8 = ficha;
+            break;
+            case 9:
+                pos9 = ficha;
+            break;
+        }
+    }
+
 }
