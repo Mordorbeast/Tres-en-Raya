@@ -42,7 +42,12 @@ public class Main {
                 t.hayFicha(posicion);
                 
             }while(posicion <= 0 || posicion > 9 || t.hayFicha == true);
-
+            
+	    t.colocarFicha(posicion,ficha);
+            
+            t.aumentarTurno();
+            
+            
             
         }while(salir == false);
         
