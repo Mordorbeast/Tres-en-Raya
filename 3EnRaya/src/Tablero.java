@@ -27,4 +27,21 @@ public class Tablero {
         this.pos8 = " ";
         this.pos9 = " ";
     }
+
+    public void mostrarTablero(){         
+        System.out.println("       Tablero       " + "        " + "     Posiciones      ");
+        System.out.println("                     " + "Turno: " + turno + "                     ");
+        System.out.println("      *       *      " + "        " + "      *       *      ");
+        System.out.println("  " + pos1 + "   *   " + pos2 + "   *   " + pos3 + "  " + "        " + "  1   *   2   *   3  ");
+        System.out.println("      *       *      " + "        " + "      *       *      ");
+        System.out.println("* * * * * * * * * * *" + "        " + "* * * * * * * * * * *");
+        System.out.println("      *       *      " + "        " + "      *       *      ");
+        System.out.println("  " + pos4 + "   *   " + pos5 + "   *   " + pos6 + "  " + "        " + "  4   *   5   *   6  ");
+        System.out.println("      *       *      " + "        " + "      *       *      ");
+        System.out.println("* * * * * * * * * * *" + "        " + "* * * * * * * * * * *");
+        System.out.println("      *       *      " + "        " + "      *       *      ");
+        System.out.println("  " + pos7 + "   *   " + pos8 + "   *   " + pos9 + "  " + "        " + "  7   *   8   *   9  ");
+        System.out.println("      *       *      " + "        " + "      *       *      ");
+    }
+    	
 }
