@@ -166,4 +166,46 @@ public class Tablero {
         }
     }
 
+    public boolean tableroLleno(){
+        if(!" ".equals(pos1) && !" ".equals(pos2) && !" ".equals(pos3) && !" ".equals(pos4) && !" ".equals(pos5) && !" ".equals(pos6) && !" ".equals(pos7) && !" ".equals(pos8) && !" ".equals(pos9)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    
+    public String tresEnRaya(){
+        if(pos1.equals(pos2) && pos1.equals(pos3)){ 
+            return pos1;
+        }else if(pos4.equals(pos5) && pos4.equals(pos6)){
+            return pos4;
+        }else if(pos7.equals(pos8) && pos7.equals(pos9)){
+            return pos7;
+        }else if(pos1.equals(pos4) && pos1.equals(pos7)){
+            return pos1;
+        }else if(pos2.equals(pos5) && pos2.equals(pos8)){
+            return pos2;
+        }else if(pos3.equals(pos6) && pos3.equals(pos9)){
+            return pos3;
+        }else if(pos1.equals(pos5) && pos1.equals(pos9)){
+            return pos1;
+        }else if(pos3.equals(pos5) && pos3.equals(pos7)){
+            return pos3;
+        }else{
+            return " ";
+        }
+    }
+    
+    public void quienGana(String ficha){
+        System.out.println("");
+        if(ficha.equals("X")){
+            System.out.println("El jugador 1 ha ganado la partida.");
+        }else if(ficha.equals("O")){
+            System.out.println("El jugador 2 ha ganado la partida.");
+        }else{
+            System.out.println("El tablero esta lleno. La partida se ha acabado.");
+        }
+    }
+
 }
